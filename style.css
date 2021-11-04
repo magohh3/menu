@@ -24,6 +24,7 @@ body{background-color:#F4F2EF;}
 .h-500{height: 500px;}
 .w-100{width: 100%;}
 .w-250{width: 250px;}
+.w-150{width: 150px;}
 .w-70{width: 70%;}
 .w-70px{width: 70px;}
 
@@ -53,6 +54,7 @@ body{background-color:#F4F2EF;}
 .center-center i{font-size: 3rem;color: #2F5F5F;}
 .flex{display: flex;}
 .flex-rz{display: flex;}
+.flex-start{align-items: flex-start;}
 @media all and (min-width: 0px) and (max-width: 340px){
     .flex-rz {display: block;}
 }
