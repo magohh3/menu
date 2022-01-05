@@ -1,6 +1,7 @@
 body{background-color:#F4F2EF;}
 .mb-1--5{margin-bottom: 1.5rem;}
 .mx-10px{margin: 0 10px;}
+.mx-15px-0{margin: 15px 0;}
 .my-2em{margin: 2em 0;}
 .ml-5px{margin-left: 5px;}
 .m0{margin: 0;}
@@ -14,6 +15,7 @@ body{background-color:#F4F2EF;}
 .mt-1em{margin-top: 1em;}
 
 .py-3em{padding:0 3em;}
+.p-0{padding: 0em;}
 
 .pr-5px{padding-right: 5px;}
 .pr-15px{padding-right: 15px;}
@@ -22,6 +24,7 @@ body{background-color:#F4F2EF;}
 .p0{padding: 0;}
 
 .h-30{height: 30px;}
+.h-300{height: 300px;}
 .h-500{height: 500px;}
 .w-100{width: 100%;}
 .w-250{width: 250px;}
@@ -357,6 +360,15 @@ footer .text-1{
 	border-right: 3px #7C542A solid;
 	text-shadow: 1px 1px 1px #7C542A;
 }
+.btn-2{
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	line-height: 90px;
+	margin: 15px;
+	height: 90px;
+	font-size: 1.7em;
+	}
 @media all and (min-width: 500px) and (max-width: 8000px){
     .bttn {padding: 5px 70px;}
 }
