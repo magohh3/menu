@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="esp" id="lang">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,16 +38,15 @@
 				<span onclick="openNav()"><svg height="20" style="fill:#665449" viewbox="0 0 100 80" width="40"><rect height="8" width="100"></rect><rect height="8px" width="100" y="30"></rect><rect height="8" width="100" y="60"></rect></svg>
 				</span>
 				<div>
-				<a href="" onclick="language()" id="eng">ENG /</a>
-				<a href="" onclick="language()" id="esp">ESP</a>	
+				<a href="" onclick="change()">ENG /</a>
+				<a href="" onclick="">ESP</a>	
 				</div>
 				
 			</div>
 		</div>
 	</div>
 	<div class="container">
-		<h1 class="text-center m--5-0 brown-text esp">Restaurante</h1>
-		<h1 class="text-center m--5-0 brown-text eng none">Restaurant</h1>
+		<h1 class="text-center m--5-0 brown-text" id="t1">Restaurante</h1>
 <!--sucursales-->
 		<div class="row">
 			<div id="myCarousel" class="carousel1 carousel slide p-0" data-ride="carousel">
@@ -154,6 +153,7 @@
 		</div>
 	</footer>
 
+
 <script type="text/javascript">
 	$( document ).ready(function() {
 	    $('.carousel1').carousel({interval:3000});
@@ -173,21 +173,29 @@ function closeNav() {
 	$('#bgfilter').removeClass('show-1');
 };
 
-function language(){
-	let langEsp = document.getElementById('esp')
-	let langEng = document.getElementById('eng')
-	let esp = document.getElementByClassName('esp')
-	let eng = document.getElementByClassName('eng')
-	if (langEsp === 'esp'){
-		esp.style.display = "block";
-		eng.style.display = "none"
-	} else if (langEng === 'eng'){
-		esp.style.display = "none";
-		eng.style.display = "block"
+
+	function change() {
+		html.setAttribute('lang','eng');
 	}
-	console.log(esp)
-	console.log(eng)
+
+//var html = document.getElementsByTagName("html")[0].getAttribute("lang");
+		//html.setAttribute("lang","eng")
+		//console.log(html)
+
+
+
+let lang = document.documentElement.lang;
+console.log(lang)
+
+if(lang === 'eng'){
+	document.getElementById("t1").innerHTML="Restaurant";
+}else{
+	document.getElementById("t1").innerHTML="Restaurante";
 }
+
+
+	
+
 </script>
 
 </body>
