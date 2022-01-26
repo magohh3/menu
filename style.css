@@ -3,6 +3,7 @@ body{background-color:#F4F2EF;}
 .mx-10px{margin: 0 10px;}
 .mx-15px-0{margin: 15px 0;}
 .my-2em{margin: 2em 0;}
+.my-2em-auto{margin: 2em auto!important;}
 .ml-5px{margin-left: 5px;}
 .m0{margin: 0;}
 .m--5-0{margin: .5em 0;}
@@ -12,6 +13,7 @@ body{background-color:#F4F2EF;}
 .p2{padding: 2rem;}
 .p3{padding: 3em;}
 .p15px{padding: 15px;}
+.pb-1--5{padding-bottom: 1.5em;}
 
 
 .mt-1em{margin-top: 1em;}
@@ -123,7 +125,7 @@ h1{font-size: 6em;font-family: 'Dancing Script', cursive;}
 		margin: 2em 1em;
 		text-align: right;
 	}
-.logo{
+/*.logo{
 	top: 0;
 	left: 0;
 	height: 50px;
@@ -131,7 +133,7 @@ h1{font-size: 6em;font-family: 'Dancing Script', cursive;}
 	position: absolute;
 	margin: 3em auto;
 	right: 0;
-	}
+	}*/
 
 .logo-1{
 	display: block;
@@ -339,14 +341,18 @@ h1{font-size: 6em;font-family: 'Dancing Script', cursive;}
 }
 footer .logo{
 	height: 30px;
-	margin: auto;
+	margin: 2em auto;
 }
 footer .text-1{
-	margin: auto;
 	color: #fff;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 }
-
+footer a{
+	color: #fff!important;
+	font-size: 1.3rem;
+	text-decoration: none!important;
+	display: block;
+}
 .bttn{
 		border: none;
 		background-color: #7C542A;

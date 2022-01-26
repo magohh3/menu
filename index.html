@@ -133,26 +133,52 @@
 			</div>
 		</div>
 	</div>
-	<footer class="text-center p2 row">
-		<div class="col-md-4">
-			<img class="logo" src="https://pendulo.com/archivos/logo-white.png" alt="">
+	<footer class="text-center p2">
+		<div class="container">
+			<div class="row mb-1--5">
+				<div class="col-md-6">
+					<img class="logo" src="https://pendulo.com/archivos/logo-white.png" alt="">
+				</div>
+				<div class="col-md-6">
+					<ul class="social my-2em-auto">
+						<li class="facebook-f">
+							<a title="FACEBOOK" target="_blank" href="https://www.facebook.com/Cafebreria.el.Pendulo"><i class="fab fa-facebook-f"></i></a>
+						</li>
+						<li class="twitter">
+							<a title="TWITTER" target="_blank" href="https://twitter.com/El_Pendulo"><i class="fab fa-twitter"></i></a>
+						</li>
+						<li class="instagram">
+							<a title="INSTAGRAM" target="_blank" href="https://www.instagram.com/cafebreriaelpendulo/"><i class="fab fa-instagram"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<p class="text-1"  id="pl"><strong>PÁGINAS LEGALES</strong></p>
+					<a c id="al">Aviso legal</a>
+					<a c id="pd">Protección de datos</a>
+					<a c id="pc">Política de cookies</a>
+					<a c id="cc">Condiciones de compra</a>
+				</div>
+				<div class="col-md-4">
+					<p class="text-1" id="c"><strong>CONTACTO</strong></p>
+					<a>web@pendulo.com</a>
+					<a id="cs">Contáctanos</a>
+					<a id="bs">Bolsa de trabajo</a>
+					<a id="s">Sucursales</a>
+				</div>
+				<div class="col-md-3">
+					<p class="text-1" id="ac"><strong>ATENCIÓN AL CLIENTE</strong></p>
+					<a id="pf">Preguntas frecuentes</a>
+					<a id="f">Facturación</a>
+				</div>
+				<div class="col-md-12 my-2em">
+					<p class="text-1">2022 © <strong>Cafebrería El Péndulo</strong>. <span id="d">Todos los Derechos Reservados</span></p>
+				</div>
+			</div>
 		</div>
-		<div class="col-md-4 flex">
-			<ul class="social">
-				<li class="facebook-f">
-					<a title="FACEBOOK" target="_blank" href="https://www.facebook.com/Cafebreria.el.Pendulo"><i class="fab fa-facebook-f"></i></a>
-				</li>
-				<li class="twitter">
-					<a title="TWITTER" target="_blank" href="https://twitter.com/El_Pendulo"><i class="fab fa-twitter"></i></a>
-				</li>
-				<li class="instagram">
-					<a title="INSTAGRAM" target="_blank" href="https://www.instagram.com/cafebreriaelpendulo/"><i class="fab fa-instagram"></i></a>
-				</li>
-			</ul>
-		</div>
-		<div class="col-md-4 flex">
-			 <p class="text-1">2022</p>
-		</div>
+		
 	</footer>
 
 <script type="text/javascript">
@@ -165,15 +191,41 @@
 		document.getElementById("Menu").innerHTML="Menu"; 
 		document.getElementById("Bar").innerHTML="Bar";
 		document.getElementById("Terrazas").innerHTML="Terrace";
-    document.getElementById("eng-menu").href="https://pendulo.com/especial/english-menu";
-    document.getElementById("eng-bar").href="https://pendulo.com/especial/english-menu";  
+	    document.getElementById("eng-menu").href="https://pendulo.com/especial/english-menu";
+	    document.getElementById("eng-bar").href="https://pendulo.com/especial/english-menu";
+	    document.getElementById("pl").innerHTML="LEGAL PAGES";
+	    document.getElementById("al").innerHTML="Legal Warning";
+	    document.getElementById("pd").innerHTML="Data Protection";
+	    document.getElementById("pc").innerHTML="Cookies pokicy";
+	    document.getElementById("cc").innerHTML="Purchase conditions";
+	    document.getElementById("c").innerHTML="CONTACT";
+	    document.getElementById("cs").innerHTML="Contact us";  
+	    document.getElementById("bs").innerHTML="Job bank";
+	    document.getElementById("s").innerHTML="Branch offices";
+	    document.getElementById("ac").innerHTML="CUSTOMER SUPPORT";
+	    document.getElementById("pf").innerHTML="Frequent questions";
+	    document.getElementById("f").innerHTML="Billing";
+	    document.getElementById("d").innerHTML="All rights reserved";
 	}else if(languageCode == 'es'){
 		document.getElementById("t1").innerHTML="Restaurante";
 		document.getElementById("Menu").innerHTML="Menú";
 		document.getElementById("Bar").innerHTML="Bar";
 		document.getElementById("Terrazas").innerHTML="Terrazas";
-    document.getElementById("eng-menu").href="https://pendulo.com/especial/menu";
-    document.getElementById("eng-bar").href="https://pendulo.com/especial/menu";  
+	    document.getElementById("eng-menu").href="https://pendulo.com/especial/menu";
+	    document.getElementById("eng-bar").href="https://pendulo.com/especial/menu";
+	    document.getElementById("pl").innerHTML="PÁGINAS LEGALES";
+	    document.getElementById("al").innerHTML="Aviso Legal";
+	    document.getElementById("pd").innerHTML="Protección de datos";
+	    document.getElementById("pc").innerHTML="Política de cooikes";
+	    document.getElementById("cc").innerHTML="Condiciones de compra";
+	    document.getElementById("c").innerHTML="CONTACTO";
+	    document.getElementById("cs").innerHTML="Contáctanos";  
+	    document.getElementById("bs").innerHTML="Bolsa de Trabajo";
+	    document.getElementById("s").innerHTML="Sucursales";
+	    document.getElementById("ac").innerHTML="ATENCIÓN AL CLIENTE";
+	    document.getElementById("pf").innerHTML="Preguntas Frecuentes";
+	    document.getElementById("f").innerHTML="Facturación";
+	    document.getElementById("d").innerHTML="Todos los Derechos Reservados";
 		}
   };
 
