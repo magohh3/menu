@@ -9,11 +9,16 @@ body{background-color:#F4F2EF;}
 .m--5-0{margin: .5em 0;}
 .mt-10px{margin-top: 10px;}
 .m-auto{margin: auto;}
+.mt-3em{margin-top: 3em;}
+.mt-1em{margin-top: 1em;}
+
 
 .p1{padding: 1rem;}
 .p2{padding: 2rem;}
 .p3{padding: 3em;}
+.p4{padding: 4em;}
 .p15px{padding: 15px;}
+.pr-15{padding-right: 15px;}
 .pb-1--5{padding-bottom: 1.5em;}
 
 
@@ -138,7 +143,10 @@ h1{font-size: 6em;font-family: 'Dancing Script', cursive;}
 	margin: 3em auto;
 	right: 0;
 	}
-
+.logo3{
+	width: 230px;
+	margin: 5em auto 2em;
+}
 .logo-1{
 	display: block;
 	width: 170px;
@@ -262,7 +270,7 @@ h1{font-size: 6em;font-family: 'Dancing Script', cursive;}
 	@media all and (min-width: 0px) and (max-width: 767px){
 		.mt-3-r{margin-top: 3rem;}
 	}
-.bg-1{background-color: #E4DECC;}
+.bg-1color{background-color: #E4DECC;}
 .bgcolor-1{background-color: rgba(251, 249, 247,0.6);}
 .bg-green-light{background-color: #D5E7E3;}
 .bg-brown-light{background-color: rgba(234,224,213,0.6);}
@@ -332,20 +340,22 @@ h1{font-size: 6em;font-family: 'Dancing Script', cursive;}
 .carousel-indicators{margin: 15px auto;}
 
 .social{
-	    display: inline-flex;
-    justify-content: space-between;
+	display: inline-flex;
     width: 200px;
     list-style: none;
     color: #fff;
-    margin: auto;
+    margin-top: 2em;
+    padding: 0;
+    float: left;
 }
 .social li a{
 	color: #fff;
 	font-size: 2rem;
 }
+footer{padding: 4em 4em 1em;}
 footer .logo2{
 	height: 30px;
-	margin: 2em auto;
+	float: left;
 }
 footer .text-1{
 	color: #fff;
