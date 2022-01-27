@@ -37,6 +37,7 @@ body{background-color:#F4F2EF;}
 .p0{padding: 0;}
 
 .h-30{height: 30px;}
+.h-200{height: 200px;}
 .h-300{height: 300px;}
 .h-500{height: 500px;}
 .h-600{height: 600px;}
@@ -162,14 +163,21 @@ h1{font-size: 6em;font-family: 'black', cursive;}
 	width: 50%;
 	height: 50px;
 }
+.art{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 15px;
+}
 .filter-black{
 		background-color: #000;
 		height: 100%;
 		position: absolute;
 		top: 0;
-		opacity: .4;
+		opacity: 1;
 		width: 100%;
 	}
+
 .filter-black-2{
 		width: 100%;
 		background-color: #000;
@@ -192,7 +200,7 @@ h1{font-size: 6em;font-family: 'black', cursive;}
 		transform: translate(-50%, -50%);
 		position: absolute;
 		color: #fff;
-		font-size: 2.7rem;
+		font-size: 3.5rem;
 		font-family: 'Bebas Neue', cursive;
 	}
 .title-2{
