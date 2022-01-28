@@ -407,6 +407,11 @@ footer a{
 	text-transform: uppercase;
 	font-family:'Oswald', sans-serif;
 	}
+@media all and (min-width: 0px) and (max-width: 996px){
+    .btn-2{
+    	font-size: 1em;
+    }
+}
 @media all and (min-width: 0px) and (max-width: 767px){
     .btn-2{
     	margin: 15px 0;
