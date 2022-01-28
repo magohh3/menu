@@ -401,8 +401,7 @@ footer a{
 	color: #fff;
 	text-align: center;
 	line-height: 90px;
-	margin: 15px;
-	height: 90px;
+	height: 93px;
 	font-size: 1.7em;
 	border-radius: 5px;
 	text-transform: uppercase;
@@ -480,16 +479,40 @@ a.not-under:hover{color: transparent;}
 .bg-1{
 	background-image: url(https://pendulo.com/archivos/desayuno-back-1.jpg);
 	background-position: bottom right;
+	background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.bg-2{background-image: url(https://pendulo.com/archivos/comida-back.png);}
+.bg-2{background-image: url(https://pendulo.com/archivos/comida-back.png);
+background-size: cover;
+    background-repeat: no-repeat;}
 
 .bg-3{
 	background-image: url("https://pendulo.com/archivos/desayuno-back.png");
 	background-position: bottom left;
-    background-size: 200%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
+.bg-4{
+	background-image: url("https://pendulo.com/archivos/recurso-6.png");
+	background-position: bottom left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-5{
+	background-image: url("https://pendulo.com/archivos/recurso-4m1.png");
+	background-position: bottom left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-6{
+	background-image: url("https://pendulo.com/archivos/recurso-3m1.png");
+	background-position: bottom left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 
 @font-face {
