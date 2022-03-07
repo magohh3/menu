@@ -54,7 +54,6 @@
 	$( document ).ready(function() {
 	    $('.carousel1').carousel({interval:3000});
 	    $('.carousel2').carousel({interval:3500});
-	    $('.carousel3').carousel({interval:4000});
 });
 	   
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
@@ -84,9 +83,9 @@ $(document).ready(function(){
   	{
   		items:2,
   		autoplay:true,
-  		margin:25
+  		margin:25,
+  		speed: 4000
   	});
-  	console.log("knmsdkfnsd")
 	}
 });
 

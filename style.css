@@ -605,3 +605,16 @@ body{
 	margin-top: 10px;
 	right: 20px;
 }
+.btn_floated{
+	height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    border: none;
+    background-color: #ca5116;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 3;
+    box-shadow: 2px 2px 5px;
+
+}

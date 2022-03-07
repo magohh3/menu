@@ -5,11 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Menu</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		
 	
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
@@ -18,6 +20,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="style.css">
+
 <!--FONTS-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,8 +28,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <body>
 
-	<div class="container-fluid p-0 relative">
-		<!--<img class="bg-body" src="https://pendulo.com/archivos/textura.png" alt="">-->
+	<div class="container-fluid relative">
 		<div class="header_language-buttons">
 			<button class="btn-lang" onclick="changeLang('es')">ESP</button><span class="white-text">/</span>
 			<button class="btn-lang" id="eng" onclick="changeLang('en')">ENG</button>
@@ -34,52 +36,37 @@
 		<a class="not-under absolute-center" href="https://pendulo.com/index.php"><h1 class="text-center m--5-0 white-text" id="t1">Restaurante</h1></a>
 <!--sucursales-->
 		<div class="row">
-			<div id="myCarousel1" class="carousel1 carousel slide p-0" data-ride="carousel">
-				<!-- Indicators -->
-				<ol class="carousel-indicators">
-					<li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel1" data-slide-to="1"></li>
-					<li data-target="#myCarousel1" data-slide-to="2"></li>
-				</ol>
+			<div class="col-md-12 p0">
+				<div id="myCarousel1" class="carousel1 carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel1" data-slide-to="1"></li>
+						<li data-target="#myCarousel1" data-slide-to="2"></li>
+					</ol>
 
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner">
-					<div class="filter-black-2"></div>
-					<div class="item active h-400">
-						<img class="img-fluid h-100 obj-cover" src="https://pendulo.com/archivos/roma-4.png" alt="" style="width:100%;">
-					</div>
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="filter-black-2"></div>
+						<div class="item active h-400">
+							<img class="img-fluid h-100 obj-cover" src="https://pendulo.com/archivos/roma-4.png" alt="" style="width:100%;">
+						</div>
 
-					<div class="item h-400">
-						<img class="img-fluid h-100 obj-cover" src="https://pendulo.com/archivos/zona-1.png" alt="" style="width:100%;">
-					</div>
+						<div class="item h-400">
+							<img class="img-fluid h-100 obj-cover" src="https://pendulo.com/archivos/zona-1.png" alt="" style="width:100%;">
+						</div>
 
-					<div class="item h-400">
-						<img class="img-fluid h-100 obj-cover" src="https://pendulo.com/archivos/condesa3.png" alt="" style="width:100%;">
+						<div class="item h-400">
+							<img class="img-fluid h-100 obj-cover" src="https://pendulo.com/archivos/condesa3.png" alt="" style="width:100%;">
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!--
-		<div id="mySidenav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<a href="#"><img class="img-2" src="https://pendulo.com/archivos/logo-brown.png" alt=""></a>
-			<a href="#">About</a>
-			<a href="#">Services</a>
-			<a href="#">Clients</a>
-			<a href="#">Contact</a>
-		</div>
-
-		<div class="mb-1--5 relative">
-			
-			<div class="ham">
-				<span onclick="openNav()"><svg height="20" style="fill:#665449" viewbox="0 0 100 80" width="40"><rect height="8" width="100"></rect><rect height="8px" width="100" y="30"></rect><rect height="8" width="100" y="60"></rect></svg>
-				</span>	
-			</div>
-		</div>-->
 	</div>
-	<div class="container-xxl relative p-0">
+	<div class="container-xxl relative">
 		<div class="row">
-			<div class="col-md-4 p-0 buttons_margin h-400">
+			<div class="col-md-4 buttons_margin h-400 p0">
 				<iframe class="br-10" width="100%" height="100%" src="https://www.youtube.com/embed/ikVHXoM3X4I?start=67&autoplay=1&mute=1&controls=0&loop=1&playlist=ikVHXoM3X4I&rel=0&showinfo=0&modestbranding=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 			<div class="col-md-4 p0-rz row buttons_margin p0">
@@ -100,119 +87,92 @@
 				</div>
 			</div>
 			<div class="col-md-4 p-0 buttons_margin">
-				<div id="myCarousel2" class="carousel2 carousel slide p-0 h-300" data-ride="carousel">
-				<!-- Indicators 
-				<ol class="carousel-indicators">
-					<li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel2" data-slide-to="1"></li>
-					<li data-target="#myCarousel2" data-slide-to="2"></li>
-					<li data-target="#myCarousel2" data-slide-to="3"></li>
-					<li data-target="#myCarousel2" data-slide-to="4"></li>
-					<li data-target="#myCarousel2" data-slide-to="5"></li>
-				</ol>-->
-
+				<div id="myCarousel2" class="carousel2 carousel slide" data-ride="carousel">
 <!-- Especialidades -->
-				<div class="carousel-inner br-10">
-					<div class="item active">
-						<img class="img-fluid obj-cover h-400" src="https://pendulo.com/archivos/aperol.jpg" alt="" style="width:100%;">
-						
+					<div class="carousel-inner br-10">
+						<div class="item active">
+							<img class="img-fluid obj-cover h-400" src="https://pendulo.com/archivos/aperol.jpg" alt="" style="width:100%;">
+							
+						</div>
+						<div class="item">
+							<img class="img-fluid obj-cover h-400" src="https://pendulo.com/archivos/huevos-cazuela.jpg" alt="" style="width:100%;">
+						</div>
+						<div class="item">
+							<img class="img-fluid obj-cover h-400" src="https://pendulo.com/archivos/jugos.jpg" alt="" style="width:100%;">
+						</div>
+						<div class="item">
+							<img class="img-fluid obj-cover h-400" src="https://pendulo.com/archivos/matcha-latte.jpg" alt="" style="width:100%;">
+						</div>
+						<div class="item">
+							<img class="img-fluid obj-cover h-400" src="https://pendulo.com/archivos/pan-2.jpg" alt="" style="width:100%;">
+						</div>
+						<div class="item">
+							<img class="img-fluid obj-cover h-400" src="https://pendulo.com/archivos/pan.jpg" alt="" style="width:100%;">
+						</div>
 					</div>
-					<div class="item">
-						<img class="img-fluid obj-cover h-400" src="https://pendulo.com/archivos/huevos-cazuela.jpg" alt="" style="width:100%;">
-					</div>
-					<div class="item">
-						<img class="img-fluid obj-cover h-400" src="https://pendulo.com/archivos/jugos.jpg" alt="" style="width:100%;">
-					</div>
-					<div class="item">
-						<img class="img-fluid obj-cover h-400" src="https://pendulo.com/archivos/matcha-latte.jpg" alt="" style="width:100%;">
-					</div>
-					<div class="item">
-						<img class="img-fluid obj-cover h-400" src="https://pendulo.com/archivos/pan-2.jpg" alt="" style="width:100%;">
-					</div>
-					<div class="item">
-						<img class="img-fluid obj-cover h-400" src="https://pendulo.com/archivos/pan.jpg" alt="" style="width:100%;">
-					</div>
-				</div>
 				</div>
 			</div>
 		</div>
 <!--promociones-->
 		<div class="row mb-1--5">
-			<div class="owl-carousel">
-				<div><img class="m-auto h-100 obj-contain" src="https://mcusercontent.com/f4dc40364e07b41a7c51fd9c2/images/864c3299-a379-eb89-7baa-85694c797b65.jpg" alt=""></div>
-				<div><img class="m-auto h-100 obj-contain" src="https://pendulo.com/archivos/rocola_web_pendulo.jpg" alt=""></div>
-				<div><img class="m-auto h-100 obj-contain" src="https://mcusercontent.com/f4dc40364e07b41a7c51fd9c2/images/3c1d6cc7-d721-afc0-ad73-8ddf30c01f23.jpg" alt=""></div>
-			</div>
-			<div id="myCarousel3" class="carousel3 carousel slide p-0" data-ride="carousel">
-				<!-- Indicators -->
-				<ol class="carousel-indicators">
-					<li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel3" data-slide-to="1"></li>
-					<li data-target="#myCarousel3" data-slide-to="2"></li>
-				</ol>
-
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner">
-					<div class="item active h-300">
-						<img class="m-auto h-100 obj-contain" src="https://mcusercontent.com/f4dc40364e07b41a7c51fd9c2/images/864c3299-a379-eb89-7baa-85694c797b65.jpg" alt="">
-					</div>
-					<div class="item h-300">
-						<img class="m-auto h-100 obj-contain" src="https://pendulo.com/archivos/rocola_web_pendulo.jpg" alt="">
-					</div>
-					<div class="item h-300">
-						<img class="m-auto h-100 obj-contain" src="https://mcusercontent.com/f4dc40364e07b41a7c51fd9c2/images/3c1d6cc7-d721-afc0-ad73-8ddf30c01f23.jpg" alt="">
-					</div>
-				</div>
+			<div class="owl-carousel p0">
+				<div><img class="m-auto h-100 obj-contain br-10" src="https://mcusercontent.com/f4dc40364e07b41a7c51fd9c2/images/864c3299-a379-eb89-7baa-85694c797b65.jpg" alt=""></div>
+				<div><img class="m-auto h-100 obj-contain br-10" src="https://pendulo.com/archivos/rocola_web_pendulo.jpg" alt=""></div>
+				<div><img class="m-auto h-100 obj-contain br-10" src="https://mcusercontent.com/f4dc40364e07b41a7c51fd9c2/images/3c1d6cc7-d721-afc0-ad73-8ddf30c01f23.jpg" alt=""></div>
 			</div>
 		</div>
 	</div>
-	<footer class="text-cente">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<img class="logo2" src="https://pendulo.com/archivos/logo-white.png" alt="">
-					<ul class="social my-2em-auto">
-						<li class="facebook-f pr-15">
-							<a title="FACEBOOK" target="_blank" href="https://www.facebook.com/Cafebreria.el.Pendulo"><i class="fab fa-facebook-f"></i></a>
-						</li>
-						<li class="twitter pr-15">
-							<a title="TWITTER" target="_blank" href="https://twitter.com/El_Pendulo"><i class="fab fa-twitter"></i></a>
-						</li>
-						<li class="instagram pr-15">
-							<a title="INSTAGRAM" target="_blank" href="https://www.instagram.com/cafebreriaelpendulo/"><i class="fab fa-instagram"></i></a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-md-3 text-left">
-					<p class="text-1"  id="pl"><strong>PÁGINAS LEGALES</strong></p>
-					<a c id="al">Aviso legal</a>
-					<a c id="pd">Protección de datos</a>
-					<a c id="pc">Política de cookies</a>
-					<a c id="cc">Condiciones de compra</a>
-				</div>
-				<div class="col-md-3 text-left">
-					<p class="text-1" id="c"><strong>CONTACTO</strong></p>
-					<a>web@pendulo.com</a>
-					<a id="cs">Contáctanos</a>
-					<a id="bs">Bolsa de trabajo</a>
-					<a id="s">Sucursales</a>
-				</div>
-				<div class="col-md-3 text-left">
-					<p class="text-1" id="ac"><strong>ATENCIÓN AL CLIENTE</strong></p>
-					<a id="pf">Preguntas frecuentes</a>
-					<a id="f">Facturación</a>
-				</div>
-				<div class="col-md-12 mt-3em">
-					<p class="text-1 text-center">2022 © <strong>Cafebrería El Péndulo</strong>. <span id="d">Todos los Derechos Reservados</span></p>
+	<footer class="text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 p0">
+						<img class="logo2" src="https://pendulo.com/archivos/logo-white.png" alt="">
+						<ul class="social my-2em-auto">
+							<li class="facebook-f pr-15">
+								<a title="FACEBOOK" target="_blank" href="https://www.facebook.com/Cafebreria.el.Pendulo"><i class="fab fa-facebook-f"></i></a>
+							</li>
+							<li class="twitter pr-15">
+								<a title="TWITTER" target="_blank" href="https://twitter.com/El_Pendulo"><i class="fab fa-twitter"></i></a>
+							</li>
+							<li class="instagram pr-15">
+								<a title="INSTAGRAM" target="_blank" href="https://www.instagram.com/cafebreriaelpendulo/"><i class="fab fa-instagram"></i></a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3 p0 text-left">
+						<p class="text-1"  id="pl"><strong>PÁGINAS LEGALES</strong></p>
+						<a c id="al">Aviso legal</a>
+						<a c id="pd">Protección de datos</a>
+						<a c id="pc">Política de cookies</a>
+						<a c id="cc">Condiciones de compra</a>
+					</div>
+					<div class="col-md-3 p0 text-left">
+						<p class="text-1" id="c"><strong>CONTACTO</strong></p>
+						<a href="mailto:web@pendulo.com?Subject=Hola%20Péndulo">web@pendulo.com</a>
+						<a id="cs">Contáctanos</a>
+						<a id="bs">Bolsa de trabajo</a>
+						<a id="s">Sucursales</a>
+					</div>
+					<div class="col-md-3 p0 text-left">
+						<p class="text-1" id="ac"><strong>ATENCIÓN AL CLIENTE</strong></p>
+						<a id="pf">Preguntas frecuentes</a>
+						<a id="f">Facturación</a>
+					</div>
+					<div class="col-md-12 mt-3em">
+						<p class="text-1 text-center">2022 © <strong>Cafebrería El Péndulo</strong>. <span id="d">Todos los Derechos Reservados</span></p>
+					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
+			<button class="btn_floated"><img class="w-100" src="img/food.png"></button>
+		</footer>
+		
+
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet" />
 <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
+
 <script type="text/javascript" src="app.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 </body>
