@@ -70,6 +70,8 @@ function closeNav() {
 
 
 $(document).ready(function(){
+
+	//MARGIN OWL
   
   if(window.matchMedia('(max-width:1250px)').matches){
 	$(".owl-carousel").owlCarousel(
@@ -87,5 +89,17 @@ $(document).ready(function(){
   		speed: 4000
   	});
 	}
+
+//FLOATING BUTTON
+
+		$("button").animate(
+		{
+			height:"70px",
+			width:"70px"
+
+		},500)
+
+ 
+
 });
 
