@@ -76,30 +76,59 @@ $(document).ready(function(){
   if(window.matchMedia('(max-width:1250px)').matches){
 	$(".owl-carousel").owlCarousel(
   	{
-  		items:2,
+  		dots:false,
   		autoplay:true,
-  		margin:15
+  		margin:15,
+  		nav:false,
+  		speed:4000,
+  		responsiveClass:true,
+   		responsive:{
+	        0:{
+	            items:1,
+	            nav:true
+	        },
+	        768:{
+	            items:2,
+	            nav:false
+	        },
+	        1000:{
+	            items:2,
+	            nav:true,
+	            loop:false
+	        }
+    	}
   	});
 	}else{
 		$(".owl-carousel").owlCarousel(
   	{
-  		items:2,
+  		dots:false,
   		autoplay:true,
   		margin:25,
-  		speed: 4000
+  		speed: 4000,
+  		nav:false,
+  		responsiveClass:true,
+   		responsive:{
+	        0:{
+	            items:1,
+	            nav:true
+	        },
+	        768:{
+	            items:2,
+	            nav:false
+	        },
+	        1000:{
+	            items:2,
+	            nav:true,
+	            loop:false
+	        }
+    	}
   	});
 	}
 
+
 //FLOATING BUTTON
 
-		$("button").animate(
-		{
-			height:"70px",
-			width:"70px"
-
-		},500)
-
- 
+		
 
 });
 
