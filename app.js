@@ -79,13 +79,12 @@ $(document).ready(function(){
   		dots:false,
   		autoplay:true,
   		margin:15,
-  		nav:false,
   		speed:4000,
   		responsiveClass:true,
    		responsive:{
 	        0:{
 	            items:1,
-	            nav:true
+	            nav:false
 	        },
 	        768:{
 	            items:2,
@@ -93,8 +92,7 @@ $(document).ready(function(){
 	        },
 	        1000:{
 	            items:2,
-	            nav:true,
-	            loop:false
+	            nav:false,
 	        }
     	}
   	});
@@ -105,12 +103,11 @@ $(document).ready(function(){
   		autoplay:true,
   		margin:25,
   		speed: 4000,
-  		nav:false,
   		responsiveClass:true,
    		responsive:{
 	        0:{
 	            items:1,
-	            nav:true
+	            nav:false
 	        },
 	        768:{
 	            items:2,
@@ -118,8 +115,7 @@ $(document).ready(function(){
 	        },
 	        1000:{
 	            items:2,
-	            nav:true,
-	            loop:false
+	            nav:false,
 	        }
     	}
   	});
@@ -127,8 +123,34 @@ $(document).ready(function(){
 
 
 //FLOATING BUTTON
-
-		
-
 });
 
+// $('.btn_floated').hover(function (e) { 
+// 	e.preventDefault();
+// 	$(".btn_whats_app").slideToggle(100)
+// 	$(".btn_phone").slideToggle(140)
+// });
+
+$('.btn_floated').click(function (e) { 
+	e.preventDefault();
+	$(".btn_whats_app").toggle(200)
+	$(".btn_phone").toggle(350)
+});
+
+
+
+$( document ).ready(function() {
+	$('.carousel').carousel();
+});
+   
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+document.getElementById("mySidenav").style.width = "250px";
+$('#bgfilter').addClass('show-1');
+};
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+$('#bgfilter').removeClass('show-1');
+};
