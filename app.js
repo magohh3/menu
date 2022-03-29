@@ -154,3 +154,12 @@ function closeNav() {
 document.getElementById("mySidenav").style.width = "0";
 $('#bgfilter').removeClass('show-1');
 };
+
+
+$(window).resize(function(){     
+
+       if ($(window).width() < 500 ){
+		$('.nav').addClass('nav-pills');
+       }
+
+});
