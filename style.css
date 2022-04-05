@@ -6,10 +6,13 @@ body{background-color:#F4F2EF;}
 .mx-15px-0{margin: 15px 0;}
 .mx-40px-0{margin: 40px 0;}
 
+
+
 .buttons_margin{margin: 25px 0;}
 
 @media all and (min-width: 0px) and (max-width: 577px){
     .buttons_margin{margin: 15px 0;}
+    .mt-15-rz{margin-top: 15px;}
 
 }
 @media all and (min-width: 577px) and (max-width: 767px){
@@ -675,6 +678,7 @@ body.bg-cap{
 	height: 60px;
 	width: 60px;
 	display: none;
+	z-index: 1;
 }
 
 .btn_phone{
@@ -687,6 +691,19 @@ body.bg-cap{
 	border: none;
 	background-color: #e9d8c2;
 	display: none;
+	z-index: 1;
+}
+.btn_uber{
+	position: fixed;
+	bottom: 215px;
+	right: 20px;
+	height: 50px;
+	width: 50px;
+	border-radius: 100px;
+	border: none;
+	background-color: #e9d8c2;
+	display: none;
+	z-index: 1;
 }
 .owl-nav{display: none;}
 

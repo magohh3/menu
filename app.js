@@ -135,6 +135,7 @@ $('.btn_floated').click(function (e) {
 	e.preventDefault();
 	$(".btn_whats_app").toggle(200)
 	$(".btn_phone").toggle(350)
+	$(".btn_uber").toggle(400)
 });
 
 
