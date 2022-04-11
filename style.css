@@ -32,11 +32,13 @@ body{background-color:#F4F2EF;}
 .my-2em{margin: 2em 0;}
 .my-2em-auto{margin: 2em auto!important;}
 .ml-5px{margin-left: 5px;}
+.mr-1{margin-right: 1em;}
 .m0{margin: 0;}
 .m--5-0{margin: .5em 0;}
 .mt-10px{margin-top: 10px;}
 .m-auto{margin: auto;}
 .mt-3em{margin-top: 3em;}
+.mb-1em{margin-bottom: 1em;}
 .mt-1em{margin-top: 1em;}
 
 .p1{padding: 1rem;}
@@ -86,11 +88,16 @@ body{background-color:#F4F2EF;}
 
 .pr-5px{padding-right: 5px;}
 .pr-15px{padding-right: 15px;}
+.p2-1{padding: 2em 1em;}
 
 .pl-5px{padding-left: 5px;}
 .p0{padding: 0;}
 
+.h-20{height: 20%;}
+.h-30p{height: 30%;}
 .h-30{height: 30px;}
+.h-45px{height: 45px;}
+.h-50px{height: 50px;}
 .h-140{height: 140px;}
 .h-150{height: 150px;}
 
@@ -106,7 +113,9 @@ body{background-color:#F4F2EF;}
 .w-150{width: 150px;}
 .w-80{width: 80%;}
 .w-70{width: 70%;}
+.w-60{width: 60%;}
 .w-70px{width: 70px;}
+.w-50px{width: 50px;}
 .w-50{width: 50%;}
 .nowrap-rz{white-space: nowrap;}
 @media all and (min-width: 1024px) and (max-width: 1070px){
@@ -150,6 +159,9 @@ body{background-color:#F4F2EF;}
 .z-3{z-index: 3;}
 .z-1{z-index: 1;}
 
+.items-center{
+	align-items: center;
+}
 .center-center{
 	display:flex;
 	vertical-align: middle;
@@ -200,6 +212,7 @@ footer{background-color: #2F5F5F;}
 .white-text{color: #fff;}
 .brown-text{color: #765028;}
 .mustache-text{color:#C7741C}
+.orange-text{color: #e0502e;}
 
 .text-center{text-align: center;}
 .text-left-rz{text-align: left;}
@@ -345,6 +358,11 @@ h1{font-size: 7em;font-family: 'black', cursive;}
 		font-weight: 600;
 		margin: 0;
 		white-space: nowrap;
+	}
+	.name-wrap{
+		color: #683C10;
+		font-weight: 600;
+		margin: 0;
 	}
 	@media all and (min-width: 0px) and (max-width: 992px){
 	.name{white-space: break-spaces;}
@@ -725,4 +743,15 @@ a.nav-link{font-size: 3em;}
 
 @media all and (min-width: 0px) and (max-width: 500px){
     .nav-pills .nav-link.active, .nav-pills .show>.nav-link{background-color: #A9A9AA;}
+}
+
+}
+
+ul.bullet{
+	 list-style-image: url('https://pendulo.com/archivos/bullet.png');
+}
+
+.marker_1{
+	background-color: #f5e6d2;
+	padding: 1em;
 }
