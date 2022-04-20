@@ -224,6 +224,7 @@ footer{background-color: #2F5F5F;}
 .fw-600{font-weight: 600;}
 .fw-900{font-weight: 900;}
 
+.fz-2{font-size: 2em;}
 .fz-1--5{font-size: 1.5em;}
 .fz-1--1{font-size: 1.1em;}
 .fz--9{font-size: .9em;}
@@ -406,6 +407,11 @@ h1{font-size: 7em;font-family: 'black', cursive;}
 
 .brown-light-text{color: #936037;}
 .brown-text{color: #683C10;}
+
+.btn-collapse{
+	color: #683C10;
+	font-size: 2em;
+}
 
 .black-filter-1{
 		width: 100%;
