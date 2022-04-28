@@ -477,11 +477,8 @@ h1{font-size: 7em;font-family: 'black', cursive;}
     width: 200px;
     list-style: none;
     color: #fff;
-    margin-top: 2em;
-    padding: 0!important;
-	justify-content: end;
 }
-.social li a{
+.social a i{
 	color: #fff;
 	font-size: 2rem;
 }
