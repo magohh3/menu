@@ -475,7 +475,7 @@ h1{font-size: 7em;font-family: 'black', cursive;}
 .social{
 	display: -webkit-inline-flex;
     width: 200px;
-    list-style: -webkit-none;
+    list-style: none;
     color: #fff;
     margin-top: -webkit-2em;
     padding: 0!important;
