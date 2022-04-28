@@ -46,9 +46,11 @@ body{background-color:#F4F2EF;}
 .p3{padding: 3em;}
 .p4{padding: 4em;}
 .p15px{padding: 15px;}
-.pr-15{padding-right: 15px;}
+.pr-15-rz{padding-right: 15px;}
 .pb-1--5{padding-bottom: 1.5em;}
-
+@media all and (min-width: 0px) and (max-width: 767px){
+    .pr-15-rz{padding: 15px;}
+}
 .px-40{padding: 0 40px;}
 
 .buttons_padding_x{padding: 0 25px 0px;}
